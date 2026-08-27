@@ -1,0 +1,9 @@
+#ignore .env
+.env
+.env.local
+.env.development.local
+.env.test.local
+#ignore node_modules
+node_modules/
+#ignore build
+build/

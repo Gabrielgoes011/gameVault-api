@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Versão do JavaScript gerado */
+    "target": "ES2022",
+
+    /* Sistema de módulos para Node.js moderno (ES Modules) */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    /* Estrutura de pastas do projeto */
+    "rootDir": "./src", // Onde fica o código fonte em TypeScript
+    "outDir": "./dist", // Onde o código compilado em JavaScript será salvo
+
+    /* Tipos globais */
+    "types": ["node"], // Inclui as definições de tipo do Node.js
+
+    /* Depuração */
+    "sourceMap": true, // Gera arquivos .map para facilitar o debug do código TS original
+
+    /* Qualidade e Segurança de Código */
+    "strict": true, // Ativa verificações estritas de tipos (evita null/undefined acidentais)
+    "esModuleInterop": true, // Permite importar módulos CommonJS com a sintaxe moderna (import x from 'y')
+
+    /* Boas práticas e compatibilidade */
+    "verbatimModuleSyntax": true, // Força a sintaxe exata para importação de tipos vs código
+    "isolatedModules": true, // Garante compatibilidade com transpiladores rápidos como tsx/esbuild
+
+    /* Desempenho */
+    "skipLibCheck": true // Pula checagem de tipos das bibliotecas em node_modules para compilar mais rápido
+  },
+
+  /* Pastas monitoradas pelo TypeScript */
+  "include": ["src"]
+}
